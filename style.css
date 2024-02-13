@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face{
+/* @font-face{
 src: url('./fonts/static/PublicSans-Light.ttf');
 font-family: "Public Sans light";
 }
@@ -15,7 +15,7 @@ font-family: "Public Sans";
 @font-face{
 src: url('./fonts/static/PublicSans-Bold.ttf');
 font-family: "Public Sans bold";
-}
+} */
 
 
 
@@ -30,10 +30,12 @@ font-family: "Public Sans bold";
 }
 body {
   font-size: 18px;
+  font-family: "Public Sans", sans-serif;
 }
 p {
   color: var(--Grayish-Blue);
   line-height: 1.5rem;
+  /* font-family: "Public Sans"; */
   /* font-weight: 300; */
 }
 button.btn-primary {
@@ -111,7 +113,7 @@ header > article {
 }
 header > article h1 {
   font-weight: 400;
-  font-family: "Public Sans light", sans-serif;
+  /* font-family: "Public Sans light", sans-serif; */
   font-size: 2.3em;
   width: 330px;
 }
@@ -142,3 +144,46 @@ main > section.features > div.container > div > article {
 section.features > div.container > div > article p {
   padding: 0.9rem;
 }
+
+footer {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+footer > section.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+footer > section.container > section:first-child > div.socials > svg path {
+  fill: var(--White);
+}
+footer > section.container > section:first-child > div.socials {
+  display: flex;
+  gap: 0.5rem;
+}
+footer > section.container > section:first-child > div.socials > svg {
+  width: 55px;
+}
+ footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  gap: 1rem;
+  font-weight: 400;
+ }
+ footer > section.container > section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+ }
