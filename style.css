@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face{
+src: url('./fonts/static/PublicSans-Light.ttf');
+font-family: "Public Sans light";
+}
+@font-face{
+src: url('./fonts/static/PublicSans-Regular.ttf');
+font-family: "Public Sans";
+}
+@font-face{
+src: url('./fonts/static/PublicSans-Bold.ttf');
+font-family: "Public Sans bold";
+}
+
+
 
 :root {
   --Dark-Blue: hsl(233, 26%, 24%);
@@ -15,9 +29,24 @@
   --White: hsl(0, 0%, 100%);
 }
 body {
-  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
 }
-
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5rem;
+  /* font-weight: 300; */
+}
+button.btn-primary {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 1em;
+  padding: 1em;
+  width: 50vw;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(90deg,var(--Lime-Green), var(--Bright-Cyan));
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -68,6 +97,48 @@ header > figure > img {
   left: 50%;
   top: 104px;
 }
-header > figure {
-  padding: 1.5px;
+header > figure,
+header > article,
+main {
+  padding: 2px;
+}
+header > article {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+header > article h1 {
+  font-weight: 400;
+  font-family: "Public Sans light", sans-serif;
+  font-size: 2.3em;
+  width: 330px;
+}
+main {
+  margin-top: 9rem;
+}
+main > section.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+main > section.features > div.container > div,
+main > section.features > div.container > div > article,
+main > section.features > div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main > section.features > div.container {
+  margin-top: 3rem;
+}
+main > section.features > div.container > div > article {
+  gap: 0.5rem;
+}
+section.features > div.container > div > article p {
+  padding: 0.9rem;
 }
