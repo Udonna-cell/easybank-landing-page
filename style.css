@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--White);
+  /* position: fixed; */
+  width: 100%;
+}
+menu {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+nav img,
+figure img {
+  width: 100%;
+}
+div.logo {
+  width: 139px;
+  height: 20px;
+}
+div.burger {
+  width: 24px;
+  height: 11px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+div.burger > div.line {
+  padding: 0.09rem;
+  background-color: var(--Grayish-Blue);
+}
+header > figure {
+  background-image: url("./images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -48px;
+  background-size: cover;
+  height: 385px;
+  position: relative;
+  overflow: hidden;
+}
+header > figure > img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 104px;
+}
+header > figure {
+  padding: 1.5px;
+}
