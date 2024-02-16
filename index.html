@@ -1,274 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  
+  <title>Frontend Mentor | Easybank landing page</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
 
-    <title>Frontend Mentor | Easybank landing page</title>
-
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
+<body>
+  <nav>
+    <section class="main-nav">
       <div class="logo">
         <img src="./images/logo.svg" alt="logo" />
       </div>
       <div class="burger">
         <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
       </div>
-      <menu>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Careers</li>
-        </ul>
-      </menu>
-    </nav>
-    <header>
-      <figure>
-        <img src="./images/image-mockups.png" alt="image-mockups" />
-      </figure>
-      <article>
-        <h1>Next generation digital banking</h1>
-        <p>
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <button type="submit" class="btn-primary">Request Invite</button>
-      </article>
-    </header>
-    <main>
-      <section class="features">
-        <h2>Why choose Easybank?</h2>
-        <p>
-          We leverage Open Banking to turn your bank account into your financial
-          hub. Control your finances like never before.
-        </p>
-        <div class="container">
-          <div>
-            <figure>
-              <img src="./images/icon-online.svg" alt="icon-online" />
-            </figure>
-            <article>
-              <h3>Online Banking</h3>
-              <p>
-                Our modern web and mobile applications allow you to keep track
-                of your finances wherever you are in the world.
-              </p>
-            </article>
-          </div>
-          <div>
-            <figure>
-              <img src="./images/icon-budgeting.svg" alt="icon-budgeting" />
-            </figure>
-            <article>
-              <h3>Simple Budgeting</h3>
-              <p>
-                See exactly where your money goes each month. Receive
-                notifications when you’re close to hitting your limits.
-              </p>
-            </article>
-          </div>
-          <div>
-            <figure>
-              <img src="./images/icon-onboarding.svg" alt="icon-onboarding" />
-            </figure>
-            <article>
-              <h3>Fast Onboarding</h3>
-              <p>
-                We don’t do branches. Open your account in minutes online and
-                start taking control of your finances right away.
-              </p>
-            </article>
-          </div>
-          <div>
-            <figure>
-              <img src="./images/icon-api.svg" alt="icon-api" />
-            </figure>
-            <article>
-              <h3>Open API</h3>
-              <p>
-                Manage your savings, investments, pension, and much more from
-                one account. Tracking your money has never been easier.
-              </p>
-            </article>
-          </div>
+    </section>
+    
+    <menu>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+    </menu>
+    <button type="submit" class="btn-primary">Request Invite</button>
+  </nav>
+  
+  <header>
+    <figure>
+      <img src="./images/image-mockups.png" alt="image-mockups"/>
+    </figure>
+    <article>
+      <h1>Next generation digital banking</h1>
+      <p>
+        Take your financial life online. Your Easybank account will be a
+        one-stop-shop for spending, saving, budgeting, investing, and much
+        more.
+      </p>
+      <button type="submit" class="btn-primary">Request Invite</button>
+    </article>
+  </header>
+  <main>
+    <section class="features">
+      <h2>Why choose Easybank?</h2>
+      <p>
+        We leverage Open Banking to turn your bank account into your financial
+        hub. Control your finances like never before.
+      </p>
+      <div class="container">
+        <div>
+          <figure>
+            <img src="./images/icon-online.svg" alt="icon-online" />
+          </figure>
+          <article>
+            <h3>Online Banking</h3>
+            <p>
+              Our modern web and mobile applications allow you to keep track
+              of your finances wherever you are in the world.
+            </p>
+          </article>
+        </div>
+        <div>
+          <figure>
+            <img src="./images/icon-budgeting.svg" alt="icon-budgeting" />
+          </figure>
+          <article>
+            <h3>Simple Budgeting</h3>
+            <p>
+              See exactly where your money goes each month. Receive
+              notifications when you’re close to hitting your limits.
+            </p>
+          </article>
+        </div>
+        <div>
+          <figure>
+            <img src="./images/icon-onboarding.svg" alt="icon-onboarding" />
+          </figure>
+          <article>
+            <h3>Fast Onboarding</h3>
+            <p>
+              We don’t do branches. Open your account in minutes online and
+              start taking control of your finances right away.
+            </p>
+          </article>
+        </div>
+        <div>
+          <figure>
+            <img src="./images/icon-api.svg" alt="icon-api" />
+          </figure>
+          <article>
+            <h3>Open API</h3>
+            <p>
+              Manage your savings, investments, pension, and much more from
+              one account. Tracking your money has never been easier.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="articles">
+      <h2>Latest Articles</h2>
+      <section class="container">
+        <article>
+          <figure>
+            <img src="./images/image-currency.jpg" alt="image-currency" />
+          </figure>
+          <article>
+            <p class="author">By Claire Robinson</p>
+            <h3>Receive money in any currency with no fees</h3>
+            <p class="content">
+              The world is getting smaller and we’re becoming more mobile. So
+              why should you be forced to only receive money in a single …
+            </p>
+          </article>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/image-restaurant.jpg" alt="image-restaurant" />
+          </figure>
+          <article>
+            <p class="author">By Wilson Hutton</p>
+            <h3>Treat yourself without worrying about money</h3>
+            <p class="content">
+              Our simple budgeting feature allows you to separate out your
+              spending and set realistic limits each month. That means you …
+            </p>
+          </article>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/image-plane.jpg" alt="image-plane" />
+          </figure>
+          <article>
+            <p class="author">By Wilson Hutton</p>
+            <h3>Take your Easybank card wherever you go</h3>
+            <p class="content">
+              We want you to enjoy your travels. This is why we don’t charge
+              any fees on purchases while you’re abroad. We’ll even show you …
+            </p>
+          </article>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/image-confetti.jpg" alt="image-confetti" />
+          </figure>
+          <article>
+            <p class="author">By Claire Robinson</p>
+            <h3>Our invite-only Beta accounts are now live!</h3>
+            <p class="content">
+              After a lot of hard work by the whole team, we’re excited to
+              launch our closed beta. It’s easy to request an invite through
+              the site ...
+            </p>
+          </article>
+        </article>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <section class="container">
+      <section>
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+            <defs>
+              <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#33D35E" />
+                <stop offset="100%" stop-color="#2AB6D9" />
+              </linearGradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#fff" fill-rule="nonzero"
+                                                                                                                                      d="M37.754 15.847c2.852 0 5.152-1.622 5.952-4.216h-3.897c-.376.665-1.14 1.066-2.055 1.066-1.237 0-2.065-.674-2.32-1.978h8.44c.051-.352.081-.694.081-1.037 0-3.335-2.537-5.95-6.201-5.95-3.568 0-6.175 2.564-6.175 6.049 0 3.473 2.628 6.066 6.175 6.066zm2.344-7.297h-4.596c.317-1.129 1.11-1.749 2.252-1.749 1.181 0 2 .613 2.344 1.75zm10.946 7.296c1.32 0 2.5-.434 3.43-1.188l.336.804h3.027V4.093h-2.919l-.4.88c-.94-.775-2.135-1.222-3.474-1.222-3.476 0-5.961 2.505-5.961 6.026 0 3.533 2.485 6.07 5.961 6.07zm.524-3.467c-1.467 0-2.545-1.108-2.545-2.593 0-1.475 1.069-2.583 2.545-2.583 1.466 0 2.544 1.108 2.544 2.583 0 1.485-1.078 2.593-2.544 2.593zm13.123 3.467c3.02 0 5.025-1.554 5.025-3.93 0-2.883-2.387-3.256-4.183-3.575-1.08-.193-1.95-.344-1.95-.99 0-.527.422-.838 1.05-.838.71 0 1.197.337 1.197 1.063h3.667c-.044-2.303-1.92-3.843-4.816-3.843-2.912 0-4.854 1.47-4.854 3.75 0 2.757 2.337 3.289 4.1 3.574 1.092.181 1.952.368 1.952 1.024 0 .587-.543.88-1.116.88-.742 0-1.32-.383-1.32-1.214h-3.77c.036 2.463 1.919 4.1 5.018 4.1zm8.1 3.858c2.936 0 4.344-1.257 5.877-4.736l4.764-10.863h-4.206l-2.249 6.263-2.412-6.263H70.31l4.698 10.43c-.53 1.414-.983 1.804-2.48 1.804H71.45v3.365h1.341zm18.504-3.858c3.5 0 5.973-2.515 5.973-6.048S94.796 3.75 91.295 3.75a5.332 5.332 0 00-2.825.784V0H84.6v15.474h2.897l.37-.844c.923.771 2.102 1.216 3.428 1.216zm-.523-3.467c-1.467 0-2.545-1.108-2.545-2.58 0-1.486 1.078-2.594 2.545-2.594 1.466 0 2.544 1.108 2.544 2.593 0 1.473-1.087 2.58-2.544 2.58zm13.598 3.467c1.32 0 2.5-.434 3.43-1.188l.336.804h3.027V4.093h-2.918l-.401.88c-.939-.775-2.135-1.222-3.474-1.222-3.476 0-5.96 2.505-5.96 6.026 0 3.533 2.484 6.07 5.96 6.07zm.524-3.467c-1.467 0-2.545-1.108-2.545-2.593 0-1.475 1.07-2.583 2.545-2.583 1.467 0 2.545 1.108 2.545 2.583 0 1.485-1.078 2.593-2.545 2.593zm12.653 3.095V9.403c0-1.447.702-2.3 1.923-2.3.986 0 1.483.657 1.483 1.98v6.39h3.915V8.543c0-2.897-1.733-4.773-4.373-4.773-1.47 0-2.733.565-3.58 1.508l-.537-1.172h-2.747v11.369h3.916zm13.748 0v-4.808l2.848 4.808h4.616l-3.902-5.95 3.543-5.419h-4.397l-2.708 4.454V0h-3.916v15.474h3.916z" />
+              <g fill="url(#a)">
+                <path d="M10.802 0L0 19.704h5.986L16.789 0z" />
+                <path opacity=".5" d="M18.171 0L7.368 19.704h5.986L24.157 0z" />
+                <path opacity=".15" d="M25.539 0L14.737 19.704h5.986L31.525 0z" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="socials">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                                                                                                                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                                                                                                                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                                                                                                                                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                                                                                                                                    d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                                                                                                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+          </svg>
         </div>
       </section>
-      <section class="articles">
-        <h2>Latest Articles</h2>
-        <section class="container">
-          <article>
-            <figure>
-              <img src="./images/image-currency.jpg" alt="image-currency" />
-            </figure>
-            <article>
-              <p class="author">By Claire Robinson</p>
-              <h3>Receive money in any currency with no fees</h3>
-              <p class="content">
-                The world is getting smaller and we’re becoming more mobile. So
-                why should you be forced to only receive money in a single …
-              </p>
-            </article>
-          </article>
-          <article>
-            <figure>
-              <img src="./images/image-restaurant.jpg" alt="image-restaurant" />
-            </figure>
-            <article>
-              <p class="author">By Wilson Hutton</p>
-              <h3>Treat yourself without worrying about money</h3>
-              <p class="content">
-                Our simple budgeting feature allows you to separate out your
-                spending and set realistic limits each month. That means you …
-              </p>
-            </article>
-          </article>
-          <article>
-            <figure>
-              <img src="./images/image-plane.jpg" alt="image-plane" />
-            </figure>
-            <article>
-              <p class="author">By Wilson Hutton</p>
-              <h3>Take your Easybank card wherever you go</h3>
-              <p class="content">
-                We want you to enjoy your travels. This is why we don’t charge
-                any fees on purchases while you’re abroad. We’ll even show you …
-              </p>
-            </article>
-          </article>
-          <article>
-            <figure>
-              <img src="./images/image-confetti.jpg" alt="image-confetti" />
-            </figure>
-            <article>
-              <p class="author">By Claire Robinson</p>
-              <h3>Our invite-only Beta accounts are now live!</h3>
-              <p class="content">
-                After a lot of hard work by the whole team, we’re excited to
-                launch our closed beta. It’s easy to request an invite through
-                the site ...
-              </p>
-            </article>
-          </article>
-        </section>
+      <ul>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Support</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <section>
+        <button class="btn-primary">Request Invite</button>
+        <p>© Easybank. All Rights Reserved</p>
       </section>
-    </main>
-    <footer>
-      <section class="container">
-        <section>
-          <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
-              <defs>
-                <linearGradient
-                  id="a"
-                  x1="72.195%"
-                  x2="17.503%"
-                  y1="0%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#33D35E" />
-                  <stop offset="100%" stop-color="#2AB6D9" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  fill="#fff"
-                  fill-rule="nonzero"
-                  d="M37.754 15.847c2.852 0 5.152-1.622 5.952-4.216h-3.897c-.376.665-1.14 1.066-2.055 1.066-1.237 0-2.065-.674-2.32-1.978h8.44c.051-.352.081-.694.081-1.037 0-3.335-2.537-5.95-6.201-5.95-3.568 0-6.175 2.564-6.175 6.049 0 3.473 2.628 6.066 6.175 6.066zm2.344-7.297h-4.596c.317-1.129 1.11-1.749 2.252-1.749 1.181 0 2 .613 2.344 1.75zm10.946 7.296c1.32 0 2.5-.434 3.43-1.188l.336.804h3.027V4.093h-2.919l-.4.88c-.94-.775-2.135-1.222-3.474-1.222-3.476 0-5.961 2.505-5.961 6.026 0 3.533 2.485 6.07 5.961 6.07zm.524-3.467c-1.467 0-2.545-1.108-2.545-2.593 0-1.475 1.069-2.583 2.545-2.583 1.466 0 2.544 1.108 2.544 2.583 0 1.485-1.078 2.593-2.544 2.593zm13.123 3.467c3.02 0 5.025-1.554 5.025-3.93 0-2.883-2.387-3.256-4.183-3.575-1.08-.193-1.95-.344-1.95-.99 0-.527.422-.838 1.05-.838.71 0 1.197.337 1.197 1.063h3.667c-.044-2.303-1.92-3.843-4.816-3.843-2.912 0-4.854 1.47-4.854 3.75 0 2.757 2.337 3.289 4.1 3.574 1.092.181 1.952.368 1.952 1.024 0 .587-.543.88-1.116.88-.742 0-1.32-.383-1.32-1.214h-3.77c.036 2.463 1.919 4.1 5.018 4.1zm8.1 3.858c2.936 0 4.344-1.257 5.877-4.736l4.764-10.863h-4.206l-2.249 6.263-2.412-6.263H70.31l4.698 10.43c-.53 1.414-.983 1.804-2.48 1.804H71.45v3.365h1.341zm18.504-3.858c3.5 0 5.973-2.515 5.973-6.048S94.796 3.75 91.295 3.75a5.332 5.332 0 00-2.825.784V0H84.6v15.474h2.897l.37-.844c.923.771 2.102 1.216 3.428 1.216zm-.523-3.467c-1.467 0-2.545-1.108-2.545-2.58 0-1.486 1.078-2.594 2.545-2.594 1.466 0 2.544 1.108 2.544 2.593 0 1.473-1.087 2.58-2.544 2.58zm13.598 3.467c1.32 0 2.5-.434 3.43-1.188l.336.804h3.027V4.093h-2.918l-.401.88c-.939-.775-2.135-1.222-3.474-1.222-3.476 0-5.96 2.505-5.96 6.026 0 3.533 2.484 6.07 5.96 6.07zm.524-3.467c-1.467 0-2.545-1.108-2.545-2.593 0-1.475 1.07-2.583 2.545-2.583 1.467 0 2.545 1.108 2.545 2.583 0 1.485-1.078 2.593-2.545 2.593zm12.653 3.095V9.403c0-1.447.702-2.3 1.923-2.3.986 0 1.483.657 1.483 1.98v6.39h3.915V8.543c0-2.897-1.733-4.773-4.373-4.773-1.47 0-2.733.565-3.58 1.508l-.537-1.172h-2.747v11.369h3.916zm13.748 0v-4.808l2.848 4.808h4.616l-3.902-5.95 3.543-5.419h-4.397l-2.708 4.454V0h-3.916v15.474h3.916z"
-                />
-                <g fill="url(#a)">
-                  <path d="M10.802 0L0 19.704h5.986L16.789 0z" />
-                  <path
-                    opacity=".5"
-                    d="M18.171 0L7.368 19.704h5.986L24.157 0z"
-                  />
-                  <path
-                    opacity=".15"
-                    d="M25.539 0L14.737 19.704h5.986L31.525 0z"
-                  />
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div class="socials">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
-              />
-            </svg>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+                                                                                                                              href="#">Your
+        Name Here</a>.
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</body>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-              />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
-              />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"
-              />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-              />
-            </svg>
-          </div>
-        </section>
-        <ul>
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Careers</li>
-          <li>Support</li>
-          <li>Privacy Policy</li>
-        </ul>
-        <section>
-          <button class="btn-primary">Request Invite</button>
-          <p>© Easybank. All Rights Reserved</p>
-        </section>
-      </section>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </footer>
-  </body>
 </html>
