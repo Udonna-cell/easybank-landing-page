@@ -72,7 +72,7 @@ nav menu ul {
   align-items: center;
   gap: 1rem;
   border-radius: 10px;
-  padding: var(--padding-left-right);
+  padding: 2rem var(--padding-left-right);
 }
 nav menu.open {
   display: block;
@@ -164,13 +164,23 @@ header > article h1{
   }
   header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 0.9fr 1.5fr;
   }
   header > figure {
     background-image: url('./images/bg-intro-desktop.svg');
+    background-size: cover;
+    overflow: none;
     grid-column: 2 / 3;
+    height: calc(423px * 2);
+  }
+  header > figure > img {
+    display: block;
+    left: 69%;
+    top: calc(200px * 1.3);
   }
   header > article {
+    text-align: start;
+    align-items: flex-start;
     grid-row: 1 / 2;
   }
 }
