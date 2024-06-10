@@ -3,21 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
- @font-face{
-src: url('./fonts/static/PublicSans-Light.ttf');
-font-family: "Public Sans light";
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  src: url("./fonts/static/PublicSans-Light.ttf");
+  font-family: "Public Sans light";
 }
-@font-face{
-src: url('./fonts/static/PublicSans-Regular.ttf');
-font-family: "Public Sans";
+@font-face {
+  src: url("./fonts/static/PublicSans-Regular.ttf");
+  font-family: "Public Sans";
 }
-@font-face{
-src: url('./fonts/static/PublicSans-Bold.ttf');
-font-family: "Public Sans bold";
+@font-face {
+  src: url("./fonts/static/PublicSans-Bold.ttf");
+  font-family: "Public Sans bold";
 }
-
-
 
 :root {
   --Dark-Blue: hsl(233, 26%, 24%);
@@ -27,10 +25,17 @@ font-family: "Public Sans bold";
   --Light-Grayish-Blue: hsl(220, 16%, 96%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
   --White: hsl(0, 0%, 100%);
-  --padding-left-right: 1rem;
+  --padding-left-right: 1.3rem;
 }
 body {
   font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Public Sans bold";
+  color: var(--Dark-Blue);
 }
 p {
   font-family: "Public Sans";
@@ -76,7 +81,7 @@ nav menu ul {
 }
 nav menu.open {
   display: block;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: var(--padding-left-right);
   position: absolute;
   width: 100%;
@@ -85,17 +90,21 @@ nav menu.open {
   left: 50%;
   top: 69px;
   z-index: -1;
+  backdrop-filter: blur(1.2px);
 }
 nav > button {
   display: none;
 }
 
-
 button.btn-primary {
   padding: 1rem;
   border: none;
   outline: none;
-  background-image: linear-gradient(90deg,var(--Lime-Green), var(--Bright-Cyan));
+  background-image: linear-gradient(
+    90deg,
+    var(--Lime-Green),
+    var(--Bright-Cyan)
+  );
   width: calc(100vw / 2.2);
   border-radius: 50px;
   color: var(--White);
@@ -105,13 +114,12 @@ header button {
   margin-top: 1.5rem;
 }
 
-
 header > figure {
-  background-image: url('./images/bg-intro-mobile.svg');
+  background-image: url("./images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: calc(-10px * 7);
-  height: calc(423px / 1.2);
+  height: calc(423px / 1.45);
   position: relative;
   overflow: hidden;
 }
@@ -120,7 +128,7 @@ header > figure img {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: calc(200px / 2.1);
+  top: calc(200px / 2.32);
 }
 header > article {
   display: flex;
@@ -128,20 +136,109 @@ header > article {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 1rem var(--padding-left-right);
+  padding: 0.5rem var(--padding-left-right);
 }
-header > article h1{
-  font-family: "Public Sans light";
-  font-size: xx-large
+header > article h1 {
+  font-size: 2.4em;
+  font-family: "Public Sans light" !important;
+  font-weight: 400;
+}
+main {
+  margin-top: 2rem;
+}
+main > section {
+  padding: 4rem var(--padding-left-right);
+}
+main > section.features {
+  background-color: var(--Light-Grayish-Blue);
+  text-align: center;
+}
+main > section.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main > section.features div.container {
+  display: flex;
+  flex-direction: column;
+}
+main > section.features div.container > div > figure > img {
+  width: 72px;
+  height: 72px;
+}
+main > section.features div.container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* align-content: center; */
+}
+main > section.features > h2 {
+  font-size: 2em;
+  font-family: "Public Sans light" !important;
+  font-weight: 400;
+}
+main > section.features div.container > div > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
+main > section.articles {
+  background-color: var(--Very-Light-Gray);
+}
+main > section.articles > section.container {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+main > section.articles > section.container > article {
+  background-color: var(--White);
+  flex-grow: 2;
+  font-size: 1rem;
+  border-radius: 0 0 5px 5px;
+}
+main > section.articles > section.container > article > figure {
+  height: calc(5rem * 2);
+}
+main > section.articles > section.container article > figure img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 5px 0 0;
+}
+main > section.articles > section.container > article > article {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 @media (min-width: 767px) {
+  :root {
+    --padding-left-right: 3.8rem;
+  }
+  h1 {
+    font-size: unset;
+  }
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
   nav {
+    width: 100%;
+    background-color: var(--White);
     display: flex;
-    position: static;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
   }
   nav menu,
   nav > button {
@@ -164,23 +261,58 @@ header > article h1{
   }
   header {
     display: grid;
-    grid-template-columns: 0.9fr 1.5fr;
+    grid-template-columns: 0.9fr 1.4fr;
+    grid-template-rows: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-wrap: pretty;
   }
   header > figure {
-    background-image: url('./images/bg-intro-desktop.svg');
-    background-size: cover;
-    overflow: none;
+    background-image: url("./images/bg-intro-desktop.svg");
+    background-size: auto 122%;
+    overflow: unset;
+    background-position: 40px calc(-10px * 8);
     grid-column: 2 / 3;
-    height: calc(423px * 2);
+    height: 100%;
   }
   header > figure > img {
     display: block;
     left: 69%;
-    top: calc(200px * 1.3);
+    top: calc(200px * 1.9);
+    z-index: 1;
+    width: 80%;
   }
   header > article {
     text-align: start;
     align-items: flex-start;
     grid-row: 1 / 2;
+  }
+  main {
+    margin: 0;
+  }
+  main > section.features {
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  main > section.features > p {
+    text-align: start;
+    width: calc(70vw / 1.3);
+  }
+  main > section.features div.container {
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  main > section.features div.container > div > article {
+    align-items: flex-start;
+    text-align: start;
+  }
+  main > section.features div.container > div {
+    align-items: flex-start;
+  }
+
+  main > section.articles > section.container {
+    flex-direction: row;
   }
 }
