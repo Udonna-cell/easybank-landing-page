@@ -37,10 +37,19 @@ h4 {
   font-family: "Public Sans bold";
   color: var(--Dark-Blue);
 }
-p {
+p,
+li,
+div.attribution,
+.attribution a {
   font-family: "Public Sans";
   line-height: 1.5rem;
   color: var(--Grayish-Blue);
+}
+.attribution a {
+  color: var(--White);
+}
+.attribution a:visited {
+  color: var(--White);
 }
 img {
   width: 100%;
@@ -220,6 +229,50 @@ main > section.articles > section.container > article > article {
   gap: 10px;
 }
 
+footer {
+  background-color: var(--Dark-Blue);
+  padding: 50px var(--padding-left-right);
+}
+footer section div.socials {
+  margin-top: 1rem;
+}
+footer section div.socials svg {
+  width: 25px;
+  height: 26px;
+}
+footer ul {
+  list-style: none;
+  gap: 0.5rem;
+}
+footer > section.container,
+footer,
+footer ul,
+footer > section.container > section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer > section.container {
+  gap: 1.7rem;
+  margin-bottom: 1rem;
+}
+footer > section.container > section:first-child, 
+footer > section.container > section:last-child {
+  gap: 1rem;
+}
+
+nav li,
+footer li,
+button,
+footer section div.socials svg {
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: var(--White);
+}
+
 @media (min-width: 767px) {
   :root {
     --padding-left-right: 3.8rem;
@@ -314,5 +367,31 @@ main > section.articles > section.container > article > article {
 
   main > section.articles > section.container {
     flex-direction: row;
+  }
+
+
+  footer {
+    padding: 1.5rem var(--padding-left-right);
+
+  }
+  footer section.container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5rem;
+  }
+  footer section.container > ul {
+    width: 130px;
+
+    height: 7rem;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 1.2rem;
+  }
+  footer section.container > section:last-child {
+    flex-grow: 2;
+  }
+  footer > section.container > section:last-child {
+    align-items: flex-end;
   }
 }
